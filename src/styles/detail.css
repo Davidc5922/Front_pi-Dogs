@@ -1,0 +1,44 @@
+.deatil{
+    background: rgba(0, 0, 0,.5);
+
+    color: #84b6f4;
+    /* margin: 30px 50px; */
+    margin-top: 50px;
+    margin-left: 30%;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    display: inline-flex;
+
+    max-width: 600px;
+    max-height: 950px;
+    
+    flex-direction: column;
+    align-items: center;
+
+}
+.image{
+    width: 600px;
+    height: 380px;
+}
+.datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.img_ico{
+    background: none;
+    width: 130px;
+    height: 150px;
+}
+
+
+
+.loading{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 100px;
+}
