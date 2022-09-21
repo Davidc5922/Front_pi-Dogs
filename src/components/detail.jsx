@@ -86,7 +86,7 @@ export default function Detail(props) {
                     <ul >
                         {myDog[0].CreatedInDB ?
                             myDog[0].temperaments.map(e => {
-                                return <li key={e.race_temperament.temperamentId}><label>{e.name}</label></li>
+                                return <li key={e.temperaments.name}><label>{e.name}</label></li>
                             }) :
                             myDog[0].temperaments ?
                                 myDog[0].temperaments.split(', ').map(e => {
