@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux'
 import {store} from './store'
+axios.defaults.baseURL =
+  process.env.REACT_APP_API || "https://wiki--dogs.herokuapp.com/";
 
 ReactDOM.render(
   <Provider store={store}>
