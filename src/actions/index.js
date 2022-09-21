@@ -86,7 +86,7 @@ export function deleteDog(id) {
     return async function (dispatch) {
         try {
             
-            const deleteDog = await axios.delete(`/dogs/${id}`);
+            const deleteDog = await axios.delete('/dogs/' + id);
             return dispatch({
                 type: DELETEDDOG,
                 payload: deleteDog,
