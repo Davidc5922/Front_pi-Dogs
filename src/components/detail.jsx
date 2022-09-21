@@ -17,6 +17,7 @@ export default function Detail(props) {
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const { id } = useParams()
+    console.log(id)
  
     useEffect(() => {
         dispatch(getDetail(id))
