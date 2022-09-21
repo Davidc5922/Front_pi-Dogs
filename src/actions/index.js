@@ -23,11 +23,11 @@ export function getDogs(name) {
     return async function (dispatch) {
         try {
             if (name) {
-                return await axios.get('http://localhost:3001/dogs?name=' + name)
+                return await axios.get('/dogs?name=' + name)
                     .then(res => dispatch({ type: GETDOGS, payload: res.data }))
                 /*     .catch(err => dispatch({ type: GETDOGS, payload: err.data })) */
             }
-                let json = await axios.get('http://localhost:3001/dogs', {})
+                let json = await axios.get('/dogs', {})
             return dispatch({
                 type: GETDOGS,
                 payload: json.data
