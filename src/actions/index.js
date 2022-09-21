@@ -35,7 +35,7 @@ export function getDogs(name) {
             
             
         } catch (err) {
-            var fail = axios.get('http://localhost:3001/dogs?name=' + name)
+            var fail = axios.get('/dogs?name=' + name)
                 .then(res => res.data)
             return dispatch({
                 type: SEARCHFAIL,
@@ -48,7 +48,7 @@ export function getDogs(name) {
 
 export function getTemperaments() {
     return async function (dispatch) {
-        let json = await axios.get('http://localhost:3001/temperaments', {})
+        let json = await axios.get('/temperaments', {})
         return dispatch({
             type: GETTEMPERAMENTS,
             payload: json.data
@@ -59,7 +59,7 @@ export function getTemperaments() {
 export function getDetail(id) {
     return async function (dispatch) {
         try {
-            var json = await axios.get('http://localhost:3001/dogs/' + id)
+            var json = await axios.get('/dogs/' + id)
             return dispatch({
                 type: GETDETAIL,
                 payload: json.data
@@ -74,7 +74,7 @@ export function getDetail(id) {
 
 export function postDogs(payload) {
     return async function (dispatch) {
-        const response = await axios.post('http://localhost:3001/dogs', payload)
+        const response = await axios.post('/dogs', payload)
         console.log(response)
         return response
     }
@@ -86,7 +86,7 @@ export function deleteDog(id) {
     return async function (dispatch) {
         try {
             
-            const deleteDog = await axios.delete(`http://localhost:3001/dogs/${id}`);
+            const deleteDog = await axios.delete(`/dogs/${id}`);
             return dispatch({
                 type: DELETEDDOG,
                 payload: deleteDog,
