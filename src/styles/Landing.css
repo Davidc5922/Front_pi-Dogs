@@ -11,5 +11,9 @@
     font-size: 40px;
     font-family: 'Mouse Memoirs', sans-serif;
 }
-
+.fondo{
+    width: 100%;
+    height: 920px;
+    opacity: .5;
+}
 
