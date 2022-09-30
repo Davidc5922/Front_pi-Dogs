@@ -161,7 +161,7 @@ export default function Home(){
                                         weight_Min={e.weight_Min}
                                         weight_Max={e.weight_Max}
                                         height_Min={e.height_Min}
-                                        height_Max={e.heigh_Max}
+                                        height_Max={e.height_Max}
                                         key={e.id}
                                     />
                                 </Link>
