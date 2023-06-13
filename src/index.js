@@ -7,7 +7,7 @@ import {Provider} from 'react-redux'
 import {store} from './store'
 import axios from "axios";
 axios.defaults.baseURL =
-  process.env.REACT_APP_API || "https://backpi-dogs-production.up.railway.app/";
+  process.env.REACT_APP_API || "https://api-wiki-dogs-5idq.onrender.com/";
 
 ReactDOM.render(
   <Provider store={store}>
